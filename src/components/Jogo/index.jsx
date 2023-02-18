@@ -2,16 +2,16 @@ import * as C from './style';
 import { hangmanImages } from '../../items/hangmanImages';
 import { useState } from 'react';
 
-export const Jogo = () => {
-    const [deadLine, setDeadLine] = useState(0);
+export const Jogo = ({clickFn}) => {
+    const [deadLvl, setDeadLvl] = useState(0);
 
     return (
         <C.Container>
             <C.HangmanImage>
-                <C.Image src={hangmanImages[deadLine]} alt={'hangman game image'} />
+                <C.Image src={hangmanImages[deadLvl]} alt={'hangman game image'} />
             </C.HangmanImage>
             <C.GameSpace>
-                <C.ChoiceBtn>
+                <C.ChoiceBtn onClick={clickFn}>
                     Escolher Palavra
                 </C.ChoiceBtn>
                 <C.WordSpace>

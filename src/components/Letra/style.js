@@ -3,7 +3,7 @@ import styled from "styled-components"
 export const Character = styled.button`
     width: 40px;
     height: 40px;
-    background: ${({notActive}) => notActive ? "#798A9F": "#E1ECF4" };
+    background: ${({disabled}) => disabled ? "#798A9F": "#E1ECF4" };
     color: #7AA7C7;
     font-weight: 700;
     border: 1px solid #7AA7C7;
@@ -11,5 +11,5 @@ export const Character = styled.button`
     display: flex;
     justify-content: center;
     align-items: center;
-    cursor: ${({notActive}) => notActive ? "default" : "pointer"};
+    cursor: ${({disabled}) => disabled ? "default" : "pointer"};
 `

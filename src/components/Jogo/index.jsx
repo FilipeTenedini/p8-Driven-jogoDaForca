@@ -1,9 +1,8 @@
 import * as C from './style';
 import { hangmanImages } from '../../items/hangmanImages';
-import { useState } from 'react';
 
-export const Jogo = ({clickFn}) => {
-    const [deadLvl, setDeadLvl] = useState(0);
+
+export const Jogo = ({word, clickFn, attempts, deadLvl}) => {
 
     return (
         <C.Container>
@@ -15,6 +14,7 @@ export const Jogo = ({clickFn}) => {
                     Escolher Palavra
                 </C.ChoiceBtn>
                 <C.WordSpace>
+                    {word.map(c => attempts.includes(c) ? c : ' _')} 
                 </C.WordSpace>
             </C.GameSpace>
         </C.Container>

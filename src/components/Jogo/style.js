@@ -6,6 +6,7 @@ export const Container = styled.div`
     max-width: 1100px;
     display: flex;
     margin-bottom: 20px;
+    background-color: pink;
 `;
 export const HangmanImage = styled.div`
     flex: 1;
@@ -20,6 +21,7 @@ export const Image = styled.img`
 export const GameSpace = styled.div`
     flex: 1;
     position: relative;
+    background-color: green;
 
 `;
 export const ChoiceBtn = styled.button`
@@ -38,5 +40,10 @@ export const ChoiceBtn = styled.button`
     top: 35px;
 `;
 export const WordSpace = styled.div`
-    
+    background-color: red;
+    height: 30px;
+    width: 150px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
 `;

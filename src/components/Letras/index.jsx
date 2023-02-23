@@ -2,7 +2,7 @@ import * as C from './style';
 import { listaLetras } from '../../items/listaLetras';
 import { Letra } from '../Letra';
 
-export const Letras = ({isDisabled, word, attempts, setAttempts, setDeadLvl, deadLvl}) => {
+export const Letras = ({isDisabled, word, attempts, setAttempts, setDeadLvl, deadLvl, hits, setHits}) => {
 
     return (
         <C.Container>
@@ -16,6 +16,8 @@ export const Letras = ({isDisabled, word, attempts, setAttempts, setDeadLvl, dea
                 setAttempts={setAttempts}
                 deadLvl={deadLvl}
                 setDeadLvl={setDeadLvl}
+                hits={hits}
+                setHits={setHits}
             />
             ))}
         </C.Container>

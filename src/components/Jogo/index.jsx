@@ -2,7 +2,7 @@ import * as C from './style';
 import { hangmanImages } from '../../items/hangmanImages';
 
 
-export const Jogo = ({word, clickFn, attempts, deadLvl}) => {
+export const Jogo = ({word, clickFn, attempts, deadLvl, matchResult, playing}) => {
 
     return (
         <C.Container>
@@ -13,9 +13,18 @@ export const Jogo = ({word, clickFn, attempts, deadLvl}) => {
                 <C.ChoiceBtn onClick={clickFn}>
                     Escolher Palavra
                 </C.ChoiceBtn>
-                <C.WordSpace>
-                    {word.map(c => attempts.includes(c) ? c : ' _')} 
-                </C.WordSpace>
+                {(playing || (!playing && matchResult)) &&
+                    <C.WordSpace color={playing ? "#000000" : "#27AE60"}>
+                        {word.map(c => attempts.includes(c) ? c : '_')} 
+                    </C.WordSpace>
+                }
+                {!playing && !matchResult &&
+                    <C.WordSpace color={"#FF0000"}>
+                        {word.map(c => c)} 
+                    </C.WordSpace>
+                }
+
+
             </C.GameSpace>
         </C.Container>
     );

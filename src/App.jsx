@@ -6,16 +6,20 @@ import { palavras } from './items/palavras';
 
 function App() {
   const [isDisabled, setIsDisabled] = useState(true);
-  const [attempts, setAttempts] = useState(['e', 'l', 'f']);
+  const [attempts, setAttempts] = useState([]);
   const [deadLvl, setDeadLvl] = useState(0);
   const [hits, setHits] = useState(0);
   const [word, setWord] = useState('filipe'.split(''));
+  const [playing, setPlaying] = useState(true);
+  const [matchResult, setMatchResult] = useState('');
 
   const startGame = () => {
     setIsDisabled(false);
     setAttempts([]);
-    // setDeadLvl(0);
-    // setHits(0);
+    setDeadLvl(0);
+    setHits(0);
+    setMatchResult('');
+    setPlaying(true);
   }
 
   return (
@@ -26,7 +30,9 @@ function App() {
         word={word}
         clickFn={startGame}
         attempts={attempts}
-        deadLvl={deadLvl} 
+        deadLvl={deadLvl}
+        matchResult={matchResult}
+        playing={playing}
       />
       <Letras 
         isDisabled={isDisabled}
@@ -37,6 +43,8 @@ function App() {
         hits={hits}
         setHits={setHits}
         word={word}
+        setMatchResult={setMatchResult}
+        setPlaying={setPlaying}
       />
     </C.Container>
     </>

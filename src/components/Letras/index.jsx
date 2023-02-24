@@ -2,14 +2,15 @@ import * as C from './style';
 import { listaLetras } from '../../items/listaLetras';
 import { Letra } from '../Letra';
 
-export const Letras = ({isDisabled, attempts, setAttempts, deadLvl, setDeadLvl, hits, setHits, word}) => {
+export const Letras = ({isDisabled, attempts, setAttempts, deadLvl, setDeadLvl, hits, setHits, word, setMatchResult, setPlaying}) => {
     
     const confirmScore = (hit, lvl) => {
-        console.log('confirmhit', hit)
         if (hit === Array.from(new Set(word)).length){
-            console.log('VENCEMO')
+            setMatchResult(true);
+            setPlaying(false);
         } else if (lvl === 6) {
-            console.log('PERDEMO')
+            setMatchResult(false);
+            setPlaying(false);
         }
     }
 

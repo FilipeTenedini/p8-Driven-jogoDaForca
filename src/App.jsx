@@ -6,16 +6,18 @@ import { palavras } from './items/palavras';
 
 function App() {
   const [isDisabled, setIsDisabled] = useState(true);
-  const [attempts, setAttempts] = useState(['e']);
+  const [attempts, setAttempts] = useState(['e', 'l', 'f']);
   const [deadLvl, setDeadLvl] = useState(0);
   const [hits, setHits] = useState(0);
-  const [word, setWord] = useState('filipx'.split(''))
+  const [word, setWord] = useState('filipe'.split(''));
 
   const startGame = () => {
     setIsDisabled(false);
+    setAttempts([]);
+    // setDeadLvl(0);
+    // setHits(0);
   }
 
-  
   return (
     <>
     <C.GlobalStyle />
@@ -24,10 +26,9 @@ function App() {
         word={word}
         clickFn={startGame}
         attempts={attempts}
-        deadLvl={deadLvl}
+        deadLvl={deadLvl} 
       />
       <Letras 
-        word={word}
         isDisabled={isDisabled}
         attempts={attempts}
         setAttempts={setAttempts}
@@ -35,6 +36,7 @@ function App() {
         setDeadLvl={setDeadLvl}
         hits={hits}
         setHits={setHits}
+        word={word}
       />
     </C.Container>
     </>

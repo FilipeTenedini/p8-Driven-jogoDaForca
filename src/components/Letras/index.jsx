@@ -2,15 +2,19 @@ import * as C from './style';
 import { listaLetras } from '../../items/listaLetras';
 import { Letra } from '../Letra';
 
-export const Letras = ({isDisabled, attempts, setAttempts, deadLvl, setDeadLvl, hits, setHits, word, setMatchResult, setPlaying}) => {
+export const Letras = ({isDisabled, setIsDisabled, attempts, setAttempts, deadLvl, setDeadLvl, hits, setHits, word, setMatchResult, setPlaying}) => {
     
     const confirmScore = (hit, lvl) => {
+        const maxErrors = 6;
+
         if (hit === Array.from(new Set(word)).length){
             setMatchResult(true);
             setPlaying(false);
-        } else if (lvl === 6) {
+            setIsDisabled(true);
+        } else if (lvl === maxErrors) {
             setMatchResult(false);
             setPlaying(false);
+            setIsDisabled(true);
         }
     }
 
@@ -25,13 +29,11 @@ export const Letras = ({isDisabled, attempts, setAttempts, deadLvl, setDeadLvl, 
             newLvl += 1;
             setDeadLvl(newLvl);
         }
-
         confirmScore(newHit, newLvl);
     }
 
     const updateAttempts = (character) => {
         setAttempts([...attempts, character]);
-        
         updateScore(character);
     }
 

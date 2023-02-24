@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-    height: 470px;
+    height: 400px;
     width: 100%;
     max-width: 1100px;
     display: flex;
@@ -15,7 +15,7 @@ export const HangmanImage = styled.div`
 `;
 export const Image = styled.img`
     width: 400px;
-    height: 460px;
+    height: 390px;
 `
 export const GameSpace = styled.div`
     flex: 1;

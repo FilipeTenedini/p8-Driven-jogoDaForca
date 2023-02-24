@@ -18,13 +18,11 @@ export const Jogo = ({word, clickFn, attempts, deadLvl, matchResult, playing}) =
                         {word.map(c => attempts.includes(c) ? c : '_')} 
                     </C.WordSpace>
                 }
-                {!playing && !matchResult &&
+                {!playing && !matchResult && deadLvl > 0 &&
                     <C.WordSpace color={"#FF0000"}>
                         {word.map(c => c)} 
                     </C.WordSpace>
                 }
-
-
             </C.GameSpace>
         </C.Container>
     );

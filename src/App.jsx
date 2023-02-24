@@ -2,23 +2,25 @@ import { useState } from 'react';
 import * as C from './App.styles';
 import { Jogo } from './components/Jogo';
 import { Letras } from './components/Letras';
-import { palavras } from './items/palavras';
+import { Chute } from './components/Chute';
+import palavras from './items/palavras';
 
 function App() {
   const [isDisabled, setIsDisabled] = useState(true);
   const [attempts, setAttempts] = useState([]);
   const [deadLvl, setDeadLvl] = useState(0);
   const [hits, setHits] = useState(0);
-  const [word, setWord] = useState('filipe'.split(''));
-  const [playing, setPlaying] = useState(true);
-  const [matchResult, setMatchResult] = useState('');
+  const [word, setWord] = useState(palavras[Math.ceil((Math.random() * palavras.length))].split(''));
+  const [playing, setPlaying] = useState(false);
+  const [matchResult, setMatchResult] = useState(false);
 
   const startGame = () => {
     setIsDisabled(false);
     setAttempts([]);
     setDeadLvl(0);
     setHits(0);
-    setMatchResult('');
+    setWord(palavras[Math.ceil((Math.random() * palavras.length))].split(''));
+    setMatchResult(false);
     setPlaying(true);
   }
 
@@ -36,6 +38,7 @@ function App() {
       />
       <Letras 
         isDisabled={isDisabled}
+        setIsDisabled={setIsDisabled}
         attempts={attempts}
         setAttempts={setAttempts}
         deadLvl={deadLvl}
@@ -46,6 +49,7 @@ function App() {
         setMatchResult={setMatchResult}
         setPlaying={setPlaying}
       />
+      <Chute />
     </C.Container>
     </>
   );

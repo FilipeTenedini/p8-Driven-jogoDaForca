@@ -29,8 +29,10 @@ export const Chute = ({word, isDisabled, setIsDisabled, setAttempts, setDeadLvl,
                 type="text"
                 placeholder="Tente a sorte!"
                 disabled={isDisabled}
-                onChange ={(e) => setSingleAttempt(e.target.value)}/>
-            <C.Btn disabled={isDisabled} onClick={() => confirmWord()}>Chutar</C.Btn>
+                onChange ={(e) => setSingleAttempt(e.target.value)}
+                data-test="guess-input"
+                />
+            <C.Btn disabled={isDisabled} onClick={() => confirmWord()} data-test="guess-button">Chutar</C.Btn>
         </C.Container>
     );
 }

@@ -1,5 +1,5 @@
 import * as C from './style';   
-import { listaLetras } from '../../items/listaLetras';
+import { listaLetras } from '../../listaLetras';
 import { Letra } from '../Letra';
 
 export const Letras = ({isDisabled, setIsDisabled, attempts, setAttempts, deadLvl, setDeadLvl, hits, setHits, word, setMatchResult, setPlaying}) => {

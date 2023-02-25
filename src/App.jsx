@@ -1,9 +1,9 @@
-import { useState } from 'react';
 import * as C from './App.styles';
+import { useState } from 'react';
 import { Jogo } from './components/Jogo';
 import { Letras } from './components/Letras';
 import { Chute } from './components/Chute';
-import palavras from './items/palavras';
+import palavras from './palavras';
 
 function App() {
   const [isDisabled, setIsDisabled] = useState(true);

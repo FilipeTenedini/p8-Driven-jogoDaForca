@@ -1,5 +1,5 @@
 import * as C from './style';
-import { hangmanImages } from '../../items/hangmanImages';
+import { hangmanImages } from '../../hangmanImages';
 
 
 export const Jogo = ({word, clickFn, attempts, deadLvl, matchResult, playing}) => {

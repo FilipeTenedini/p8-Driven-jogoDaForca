@@ -48,7 +48,6 @@ export const Letras = ({isDisabled, setIsDisabled, attempts, setAttempts, deadLv
                 isDisabled={isDisabled}
                 actuallyDisabled={(letter) => attempts.includes(letter)}
                 clickFn={(letter) => updateAttempts(letter)}
-                data-test="letter"
             />
             ))}
         </C.Container>

@@ -68,3 +68,10 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+// reg = /[a-zA-Z\u00C0-\u00FF ]+/i
+
+
+// string.normalize('NFD').replace(/[\u0300-\u036f]/g, "");
+//https://pt.stackoverflow.com/questions/237762/remover-acentos-javascript

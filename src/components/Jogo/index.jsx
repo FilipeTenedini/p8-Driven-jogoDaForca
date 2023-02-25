@@ -26,4 +26,5 @@ export const Jogo = ({word, clickFn, attempts, deadLvl, matchResult, playing}) =
             </C.GameSpace>
         </C.Container>
     );
+                        
 }

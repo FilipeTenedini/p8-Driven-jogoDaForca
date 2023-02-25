@@ -19,15 +19,17 @@ export const InputArea = styled.input`
     outline: none;
     border: 1px solid #CCCCCC;
     border-radius: 3px;
+    background-color: ${({disabled}) => disabled ? "#DDDDDD": "#FFFFFF" };
     -webkit-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.25);
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.25);
+    padding-left: 10px;
 `;
 export const Btn = styled.button`
     width: 100px;
     height: 40px;
     color:#7AA7C7;
-    background-color: #E1ECF4;
+    background-color: ${({disabled}) => disabled ? "#798A9F": "#E1ECF4" };
     border: 1px solid #7AA7C7;
     border-radius: 3px;
-    cursor: pointer;
+    cursor: ${({disabled}) => disabled ? "default" : "pointer"};
 `;

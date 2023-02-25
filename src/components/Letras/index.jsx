@@ -3,7 +3,7 @@ import { listaLetras } from '../../items/listaLetras';
 import { Letra } from '../Letra';
 
 export const Letras = ({isDisabled, setIsDisabled, attempts, setAttempts, deadLvl, setDeadLvl, hits, setHits, word, setMatchResult, setPlaying}) => {
-    
+
     const confirmScore = (hit, lvl) => {
         const maxErrors = 6;
 
@@ -23,10 +23,10 @@ export const Letras = ({isDisabled, setIsDisabled, attempts, setAttempts, deadLv
         let newLvl = deadLvl;
 
         if (word.includes(character)){
-            newHit += 1;
+            newHit++;
             setHits(newHit);
         } else {
-            newLvl += 1;
+            newLvl++;
             setDeadLvl(newLvl);
         }
         confirmScore(newHit, newLvl);

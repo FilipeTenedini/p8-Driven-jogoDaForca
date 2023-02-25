@@ -37,6 +37,7 @@ function App() {
         playing={playing}
       />
       <Letras 
+        word={word}
         isDisabled={isDisabled}
         setIsDisabled={setIsDisabled}
         attempts={attempts}
@@ -45,11 +46,19 @@ function App() {
         setDeadLvl={setDeadLvl}
         hits={hits}
         setHits={setHits}
-        word={word}
         setMatchResult={setMatchResult}
         setPlaying={setPlaying}
       />
-      <Chute />
+
+      <Chute
+        word={word}
+        isDisabled={isDisabled}
+        setIsDisabled={setIsDisabled}
+        setAttempts={setAttempts}
+        setDeadLvl={setDeadLvl}
+        setPlaying={setPlaying}
+        setMatchResult={setMatchResult}
+      />
     </C.Container>
     </>
   );

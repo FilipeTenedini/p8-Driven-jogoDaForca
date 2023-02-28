@@ -1,7 +1,7 @@
 
 
-# 5° Projeto Driven Education Bootcamp
-
+# 8° Projeto Driven Education Bootcamp
+- Primeiro projeto utilizando React
 ### Você pode acessar a aplicação neste link:
   ### - <a href="https://p8-driven-jogo-da-forca.vercel.app/"> Jogo da forca </a>
   ### - <a href="https://www.figma.com/file/pBXcqQZlun3INESEf0kwDP/Jogo-da-Forca?node-id=0%3A1&t=Zcil1abyeBfsJrwi-0"> Figma </a>

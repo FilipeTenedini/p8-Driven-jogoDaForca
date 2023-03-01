@@ -28,7 +28,7 @@
 <h3>- Requisitos passados </h3>
 <details>
 <summary>    
-- Geral
+Geral
 </summary>
 
 - [ ]  Manipule o HTML usando somente React.
@@ -44,8 +44,7 @@
  </details>
  
 <details>
-<summary>    
-- Componentização
+Componentização
 </summary>
 
 - [ ]  O seu jogo deverá ter 3 componentes:
@@ -57,7 +56,7 @@
  
  <details>
 <summary>    
-- Pré-jogo
+Pré-jogo
 </summary>
 
 - [ ]  Crie um arquivo chamado `palavras.js` e coloque ele dentro da pasta `src` (o nome e o local precisam ser esses ou a avaliação falhará!).
@@ -69,7 +68,7 @@
 
 <details>
 <summary>
-- Ao apertar “Escolher Palavra”
+Ao apertar “Escolher Palavra”
 </summary
 
 - [ ]  Letras passam a ficar habilitadas.
@@ -81,7 +80,7 @@
  
  <details>
  <summary>
-- Ao pressionar uma letra
+Ao pressionar uma letra
  </summary>
  
 - [ ]  O botão de uma letra já clicada deve ficar desabilitado.
@@ -96,7 +95,7 @@
   
  <details>
  <summary>
-- Fim de jogo
+Fim de jogo
  </summary>
  
 - [ ]  Botões de letras devem ser desabilitados.
@@ -113,13 +112,13 @@
 <details>
 <summary>    
   
-### - Bônus (opcional)
+### Bônus (opcional)
   
 </summary>
 
 <details>
 <summary>    
-- Reiniciar o jogo a qualquer momento
+Reiniciar o jogo a qualquer momento
 </summary>
 
 - [ ]  A qualquer momento, o usuário pode reiniciar o jogo pressionando o botão “escolher palavra”.
@@ -130,7 +129,7 @@
 
 <details>
 <summary>    
-- Input de chute
+Input de chute
 </summary>
 
 - [ ]  Crie um novo componente no seu projeto chamado `Chute`. Esse componente deverá ter um input e um botão onde o usuário poderá chutar a palavra inteira caso ele deseje
@@ -143,7 +142,7 @@
   
 <details>
 <summary>    
-- Considerar caracteres especiais
+Considerar caracteres especiais
 </summary>
 
 - [ ]  Quando o usuário pressionar uma letra sem acento (ex: a) e, na palavra, houver a mesma letra mas com acento (ex: à, á, â, ã), ela deve ser considerada como certo.
@@ -153,7 +152,7 @@
  
  <details>
 <summary>    
-- Estilização do projeto utilizando styled-components
+Estilização do projeto utilizando styled-components
 </summary>
 
 - [ ]  A biblioteca `styled-components` é um jeito muito popular hoje em dia de fazer o CSS em projetos React. Iremos falar mais sobre ela em aulas futuras, mas a proposta é que você já tente ir fazendo a estilização desse projeto usando a ferramenta para ir se familiarizando!
@@ -192,7 +191,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 <summary>    
   
   
-# - Como executar o projeto
+# Como executar o projeto
   
   
 </summary>

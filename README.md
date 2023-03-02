@@ -186,7 +186,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
  
  <details>
 <summary>    
-Acima das expecattivas (clique para ver a foto)
+Acima das expecativas (clique para ver a foto)
 </summary>	  
 <div align="center">
 	

@@ -180,11 +180,15 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 - Comunicação entre componentes
 
  <h1 id="avaliacao">📚 Avaliação da Driven do meu Projeto</h1>
-  <div align="center">
+
+
+<div align="center">
+ 
+	  
+![image](https://user-images.githubusercontent.com/105571583/222563897-e848df67-a086-418d-aa74-ff6829941436.png)
+
   
-=> aguardando.
-  
-  </div>
+</div>
 
   
 <details>
